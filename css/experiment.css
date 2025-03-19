@@ -1,8 +1,8 @@
 
 
 
-ul { 
-    list-style-type: square;
+.firstList { 
+list-style-type: square;
     color: darkorange;
 }
 
@@ -12,7 +12,19 @@ h1{
 }
 
 p{
-    color: blue;
+    color: rgb(3, 201, 250);
     font-size: 18px;
 }
 
+
+.navlinks{
+    list-style-type: none;
+    background-color: blanchedalmond;
+}
+
+.navlinks a{
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px;
+    color: rgb(245, 140, 221);
+}
