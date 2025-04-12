@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(154, 209, 250);
+}
+
+
+.welcome {
+            background-color: white;
+            width: 1400px;
+            height: 600px;
+         }
+
+
+
+.learnAside {
+            background-color: white;
+            width: 300px;
+            height: 200px;
+
+         }
+
+
+.galleryAside {
+            background-color: white;
+            width: 300px;
+            height: 400px;
+            
+         }
+.map-img{
+    width: 100px;       /* Makes it responsive */
+    max-width: 600px;  /* Limits the max width */
+    height: auto;
+}
+
+
+footer {
+            background-color: white;
+         }
+
+.map {
+    background-color: rgb(42, 135, 42);
+    width: 1100px;
+    height: 600px;
+}
+
+.mapContainer{
+    display: flex;
+    border: 8px solid black;
+    justify-content: center;
+    width: 1400px;
+    height: 600px;
+}
