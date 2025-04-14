@@ -16,20 +16,21 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../homepageimages/Props.png);
+    background-image: url(../homepageimages/background.png);
     background-position: center;
     background-attachment: inherit;
     background-size: cover;
-    opacity: 0.3; 
+    opacity: 0.1; 
     z-index: -1; 
 }
 
 .nav li {
-    border: 2px solid black;
-    background-image: url(../homepageimages/Props.png);
+    background-image: url(../homepageimages/navPins.png);
     width: 100px;
-    height: 100px;
+    height: 150px;
     background-size: cover;
+    background-position: -80px -20px; 
+background-repeat: no-repeat;
 }
 
 section{
@@ -126,7 +127,7 @@ p{
     grid-column-start: 1;
     grid-column-end: 2;
     justify-items: center;
-    background-image: url(../homepageimages/sisandaLevelDesign.png);
+    background-image: url(../homepageimages/pinsWithRoad.png);
     background-position: center;
     background-attachment: inherit;
     background-size: cover;
@@ -138,56 +139,50 @@ p{
     width: 900px;
     height: 500px;
     position: relative;
+    font-size: 20px;
 }
 
 
 .nav1{
-background-color: aqua;
 position: absolute;
-top: 30px;
-left: 400px;
+top: 50px;
+left: 430px;
 }
 
 .nav2{
-    background-color: rgb(25, 150, 129);
     position: absolute;
     top: 231px;
-    left: 287px;
+    left: 325px;
     }
 
     .nav3{
-        background-color: rgb(34, 169, 133);
         position: absolute;
         top: 312px;
-        left: 642px;
+        left: 682px;
         }
 
         .nav4{
-            background-color: rgb(101, 184, 33);
             position: absolute;
-            top: 70px;
-            left: 701px;
+            top: 90px;
+            left: 711px;
             }
 
             .nav5{
-                background-color: rgb(193, 224, 69);
                 position: absolute;
                 top: 383px;
-                left: 100px;
+                left: 140px;
                 }
 
                 .nav6{
-                    background-color: rgb(227, 167, 47);
                     position: absolute;
-                    top: 425px;
-                    left: 378px;
+                    top: 400px;
+                    left: 398px;
                     }
 
                     .nav7{
-                        background-color: rgb(167, 34, 70);
                         position: absolute;
-                        top: 50px;
-                        left: 50px;
+                        top: 60px;
+                        left: 110px;
                         }
 
 ul {
@@ -368,5 +363,203 @@ footer {
 
     font-size: 20px;
 }
+
+
+/* ESSAYS SPECIFIC PAGE */
+
+/*.allEssays{
+
+    background-color: rgb(29, 98, 224);
+    width: 1400px;
+    height: 1200px;
+}*/
+
+.centerEssays{
+    display: flex;
+    justify-content: center;
+}
+
+.allEssays{
+    background-color: rgb(29, 98, 224);
+    display: grid;
+    grid-template-rows: 530px 530px 530px;
+    grid-template-columns: 230px 230px 230px 230px 230px 230px;
+    width: 1380px;
+    height: auto;
+    justify-content: center;
+    position: relative;
+
+
+ }
+
+ .essay1 {
+    
+    background-color: rgb(255, 255, 255);
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+       
+   }
+
+   .essay2 {
+    
+    background-color: rgb(255, 255, 255);
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+       
+   }
+
+   .essay3 {
+    
+    background-color: rgb(255, 255, 255);
+    grid-row-start: 3;
+    grid-row-end:5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+       
+   }
+
+   .allEssays p{
+    font-size: 30px;
+ }
+
+
+ 
+/*     PORTFOLIO  PAGE SPECIFIC CODE     */
+
+/*.centerBlogs{
+    display: flex;
+    justify-content: center;
+}
+ 
+ .allBlogs{
+
+    display: grid;
+    grid-template-rows: 500px 500px 500px 500px;
+    grid-template-columns: 450px 450px 450px;
+    width: 1200px;
+    height: 1600px;
+    justify-content: center;
+    position: relative;
+
+
+ }
+
+ .allBlogs p{
+    font-size: 15px;
+ }
+
+ .blog1 {
+
+         background-color: rgb(39, 94, 48);
+         grid-row-start: 1;
+         grid-row-end:2 ;
+         grid-column-start: 1;
+         grid-column-end: 3;
+         color: white;
+            
+        }
+
+        .blog2 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 1;
+            grid-row-end:2;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            color: white;
+               
+           }
+
+           .blog3 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 2;
+            grid-row-end:3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            color: white;
+               
+           }
+
+           .blog4 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 2;
+            grid-row-end:3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            color: white;
+               
+           }
+
+           .blog5 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 2;
+            grid-row-end:3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            color: white;
+               
+           }
+
+           .blog6 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 3;
+            grid-row-end:4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color: white;
+               
+           }
+
+           .blog7 {
+    
+            background-color: rgb(39, 94, 48);
+            grid-row-start: 3;
+            grid-row-end:4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            color: white;
+               
+           }
+
+           .innerBlog{
+
+            background-color: rgb(39, 94, 48);
+            width: calc(100% - 10%);
+            height: calc(100% - 10%);
+            padding: 5px;
+            outline: 6px solid rgb(255, 255, 255);
+            outline-offset: -5px;
+            border-radius: 50px; 
+            position: relative;
+        
+        }
+
+        .published{
+
+            color: rgb(233, 163, 11);
+        }
+
+
+.read-more{
+    color: rgb(233, 163, 11);
+}
+
+.entry-title{
+
+    font-size: 20px;
+}*/
+ 
+
 
 
