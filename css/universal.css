@@ -13,6 +13,23 @@ section{
     border-radius: 50px;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+  display: flex;  
+  justify-content: center;
+  width: 1400px;
+  height: 200px;
+  align-content: center;
+}
+
+.nav li{
+    margin: 50px;
+}
+
 .centerWelcome{
     display: flex;
     justify-content: center;
@@ -26,6 +43,18 @@ section{
             align-items: center;
             justify-content: center;
          }
+
+h1{
+    font-family: 'Overpass', sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .inner{
 
@@ -72,7 +101,6 @@ justify-items: center;
 .navList{
     width: 900px;
     height: 500px;
-    border: 2px solid  black;
     position: relative;
 }
 
@@ -147,14 +175,15 @@ ul {
 
 
 .map-img{
-    width:100px;
+    width:80px;
     height: auto;
+    margin: 0;
 }
 
 .indexImages{
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 150px 150px;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 110px 110px;
 }
 
 
