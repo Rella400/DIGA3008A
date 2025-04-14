@@ -3,9 +3,34 @@
     justify-content: center;
 }*/
 
-body{
+body {
     background-color: rgb(154, 209, 250);
     text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../homepageimages/Props.png);
+    background-position: center;
+    background-attachment: inherit;
+    background-size: cover;
+    opacity: 0.3; 
+    z-index: -1; 
+}
+
+.nav li {
+    border: 2px solid black;
+    background-image: url(../homepageimages/Props.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
 }
 
 section{
@@ -27,7 +52,7 @@ section{
 }
 
 .nav li{
-    margin: 50px;
+    margin: 20px;
 }
 
 .centerWelcome{
@@ -94,6 +119,10 @@ p{
     grid-column-start: 1;
     grid-column-end: 2;
 justify-items: center;
+background-image: url(../homepageimages/sisandaLevelDesign.png);
+background-position: center;
+background-attachment: inherit;
+background-size: cover;
 
 }
 
