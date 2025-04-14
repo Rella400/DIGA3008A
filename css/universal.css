@@ -1,51 +1,176 @@
+/*html{
+    display: flex;
+    justify-content: center;
+}*/
+
 body{
     background-color: rgb(154, 209, 250);
+    text-align: center;
 }
 
+section{
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.centerWelcome{
+    display: flex;
+    justify-content: center;
+}
 
 .welcome {
-            background-color: white;
-            width: 1400px;
+            background-color: rgb(248, 244, 231);
+            width: 1100px;
             height: 600px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
          }
 
+.inner{
+
+    background-color: rgb(248, 244, 231);
+    width: 1040px;
+    height: 540px;
+    padding: 5px;
+    outline: 10px solid black;
+    outline-offset: -5px;
+    border-radius: 50px; 
 
 
-.learnAside {
-            background-color: white;
-            width: 300px;
-            height: 200px;
-
-         }
-
-
-.galleryAside {
-            background-color: white;
-            width: 300px;
-            height: 400px;
-            
-         }
-.map-img{
-    width: 100px;       /* Makes it responsive */
-    max-width: 600px;  /* Limits the max width */
-    height: auto;
 }
 
-
-footer {
-            background-color: white;
-         }
-
-.map {
-    background-color: rgb(42, 135, 42);
-    width: 1100px;
-    height: 600px;
+.centerMap{
+    display: flex;
+    justify-content: center;
 }
 
 .mapContainer{
-    display: flex;
-    border: 8px solid black;
-    justify-content: center;
+    /*display: flex;    
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;*/
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1100px 300px;
     width: 1400px;
     height: 600px;
+    
 }
+
+.map {
+    background-color: rgb(42, 135, 42);
+    grid-row-start: 1;
+    grid-row-end:4 ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+justify-items: center;
+
+}
+
+
+.navList{
+    width: 900px;
+    height: 500px;
+    border: 2px solid  black;
+    position: relative;
+}
+
+
+.nav1{
+background-color: aqua;
+position: absolute;
+top: 30px;
+left: 400px;
+}
+
+.nav2{
+    background-color: rgb(25, 150, 129);
+    position: absolute;
+    top: 231px;
+    left: 287px;
+    }
+
+    .nav3{
+        background-color: rgb(34, 169, 133);
+        position: absolute;
+        top: 312px;
+        left: 642px;
+        }
+
+        .nav4{
+            background-color: rgb(101, 184, 33);
+            position: absolute;
+            top: 70px;
+            left: 701px;
+            }
+
+            .nav5{
+                background-color: rgb(193, 224, 69);
+                position: absolute;
+                top: 383px;
+                left: 100px;
+                }
+
+                .nav6{
+                    background-color: rgb(227, 167, 47);
+                    position: absolute;
+                    top: 425px;
+                    left: 378px;
+                    }
+
+                    .nav7{
+                        background-color: rgb(167, 34, 70);
+                        position: absolute;
+                        top: 50px;
+                        left: 50px;
+                        }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+
+
+
+
+.galleryAside {
+    background-color: rgb(248, 244, 231);
+            grid-row-start: 1;
+            grid-row-end:3 ;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            
+            }
+
+
+.map-img{
+    width:100px;
+    height: auto;
+}
+
+.indexImages{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 150px 150px;
+}
+
+
+.learnAside {
+    background-color: rgb(248, 244, 231);
+            /*width: 300px;
+            height: 200px;*/
+
+         }
+
+
+footer {
+    background-color: rgb(137, 136, 134);
+         }
+
+
+
+
+
