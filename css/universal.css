@@ -493,4 +493,11 @@ footer {
     flex-direction: row-reverse;
 }
 
+.design{
+    background-color:  rgb(248, 244, 231);
+
+    border-radius: 50px;
+    border-color: red;
+}
+
  
