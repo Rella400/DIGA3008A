@@ -61,6 +61,7 @@ section{
     justify-content: center;
 }
 
+
 .welcome {
             background-color: rgb(248, 244, 231);
             width: 1100px;
@@ -365,6 +366,18 @@ footer {
 }
 
 
+
+/* ARTICLE SPECIFIC PAGE */
+
+.mainArticle{
+
+    background-color:  rgb(248, 244, 231);
+    margin: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+
 /* ESSAYS SPECIFIC PAGE */
 
 /*.allEssays{
@@ -377,189 +390,75 @@ footer {
 .centerEssays{
     display: flex;
     justify-content: center;
+    background-color: rgb(29, 98, 224);
+    margin: 100px;
+    border-radius: 50px;
 }
 
 .allEssays{
-    background-color: rgb(29, 98, 224);
+    margin: 200px;
     display: grid;
-    grid-template-rows: 530px 530px 530px;
-    grid-template-columns: 230px 230px 230px 230px 230px 230px;
-    width: 1380px;
-    height: auto;
-    justify-content: center;
-    position: relative;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1400px;
+    height: 900px;
 
+ }
 
+ .allEssays h2{
+    color: rgb(29, 98, 224) ;
+ }
+
+ .allEssays a{
+    color: rgb(29, 98, 224) ;
+ }
+
+ time{
+    color:  rgb(233, 163, 11);
  }
 
  .essay1 {
-    
-    background-color: rgb(255, 255, 255);
-    grid-row-start: 1;
-    grid-row-end:2;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 244, 231);
+    grid-row: 1/2;
+    grid-column: 1/2;
 
-       
    }
 
    .essay2 {
-    
-    background-color: rgb(255, 255, 255);
-    grid-row-start: 1;
-    grid-row-end:2;
-    grid-column-start: 5;
-    grid-column-end: 7;
 
-       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 244, 231);
+    grid-row: 1/2;
+    grid-column: 3/4;
    }
 
    .essay3 {
-    
-    background-color: rgb(255, 255, 255);
-    grid-row-start: 3;
-    grid-row-end:5;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 244, 231);
+    grid-row: 2/3;
+    grid-column: 2/3;
 
        
    }
 
-   .allEssays p{
-    font-size: 30px;
- }
+   .colors{
+    width: 600px;
+    height: auto;
+   }
+
+   .website{
+    width: 900px;
+    height: auto;
+   }
+
+
 
 
  
-/*     PORTFOLIO  PAGE SPECIFIC CODE     */
-
-/*.centerBlogs{
-    display: flex;
-    justify-content: center;
-}
- 
- .allBlogs{
-
-    display: grid;
-    grid-template-rows: 500px 500px 500px 500px;
-    grid-template-columns: 450px 450px 450px;
-    width: 1200px;
-    height: 1600px;
-    justify-content: center;
-    position: relative;
-
-
- }
-
- .allBlogs p{
-    font-size: 15px;
- }
-
- .blog1 {
-
-         background-color: rgb(39, 94, 48);
-         grid-row-start: 1;
-         grid-row-end:2 ;
-         grid-column-start: 1;
-         grid-column-end: 3;
-         color: white;
-            
-        }
-
-        .blog2 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 1;
-            grid-row-end:2;
-            grid-column-start: 3;
-            grid-column-end: 5;
-            color: white;
-               
-           }
-
-           .blog3 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 2;
-            grid-row-end:3;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            color: white;
-               
-           }
-
-           .blog4 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 2;
-            grid-row-end:3;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            color: white;
-               
-           }
-
-           .blog5 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 2;
-            grid-row-end:3;
-            grid-column-start: 3;
-            grid-column-end: 5;
-            color: white;
-               
-           }
-
-           .blog6 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 3;
-            grid-row-end:4;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            color: white;
-               
-           }
-
-           .blog7 {
-    
-            background-color: rgb(39, 94, 48);
-            grid-row-start: 3;
-            grid-row-end:4;
-            grid-column-start: 3;
-            grid-column-end: 5;
-            color: white;
-               
-           }
-
-           .innerBlog{
-
-            background-color: rgb(39, 94, 48);
-            width: calc(100% - 10%);
-            height: calc(100% - 10%);
-            padding: 5px;
-            outline: 6px solid rgb(255, 255, 255);
-            outline-offset: -5px;
-            border-radius: 50px; 
-            position: relative;
-        
-        }
-
-        .published{
-
-            color: rgb(233, 163, 11);
-        }
-
-
-.read-more{
-    color: rgb(233, 163, 11);
-}
-
-.entry-title{
-
-    font-size: 20px;
-}*/
- 
-
-
-
