@@ -208,7 +208,7 @@ ul {
 
 
 .map-img{
-    width:80px;
+    width:60px;
     height: auto;
     margin: 0;
 }
@@ -475,5 +475,22 @@ footer {
     font-size: 25px;
 }
 
+
+/* PORTFOLIO SPECIFIC CODE */
+
+
+.carousel, .bin , .bottleKnock , .bridge{
+    background-color:  rgb(144, 94, 53);
+    width: 1200px;
+    margin: 150px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.bin, .bridge{
+    flex-direction: row-reverse;
+}
 
  
