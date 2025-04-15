@@ -458,7 +458,22 @@ footer {
     height: auto;
    }
 
+   
+   .mainEssay{
 
+    background-color: rgb(29, 98, 224);
+    margin: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.essayH{
+    color: white;
+}
+
+.essayP{
+    font-size: 25px;
+}
 
 
  
