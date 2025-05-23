@@ -246,10 +246,10 @@ footer {
  .allBlogs{
 
     display: grid;
-    grid-template-rows: 500px 500px 500px 500px;
-    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-template-columns: 450px 450px 450px ;
     width: 1200px;
-    height: 1600px;
+    height: 2100px;
     justify-content: center;
     position: relative;
 
@@ -336,6 +336,27 @@ footer {
             color: white;
                
            }
+
+           .blog8 {
+  background-color: rgb(39, 94, 48);
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+  color: white;
+}
+
+.blog9 {
+  background-color: rgb(39, 94, 48);
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  color: white;
+}
+
+.blog10 {
+  background-color: rgb(39, 94, 48);
+  grid-row: 4 / 5;
+  grid-column: 3 / 5;
+  color: white;
+}
 
            .innerBlog{
 
