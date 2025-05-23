@@ -54,29 +54,22 @@
 
 <div class="models">
             <article class="carousel">
-
-        <section class="description">
-                <h2>Carousel</h2>
-                
-                <ul>
-                    <li>Tools: Blender</li>
-                    <li>Theme: Abandoned Carnival at Night</li>
-                    <li>Status: In Development</li>
-                </ul>
-
-                <button>Watch</button>
-
-        </section>
-
-        <section class="video">
-            <video width="600" controls>
-                <source src="../videos/carousel.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-        </section>
-
-            </article>
+  <section class="description">
+    <h2>Carousel</h2>
+    <ul>
+      <li>Tools: Blender</li>
+      <li>Theme: Abandoned Carnival at Night</li>
+      <li>Status: In Development</li>
+    </ul>
+    <button class="watch-btn" data-video="carouselVideo">Watch Full Screen</button>
+  </section>
+  <section class="video">
+    <video id="carouselVideo" width="600" controls>
+      <source src="../videos/carousel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+</article>
 
 
             <article class="bin">
@@ -90,12 +83,12 @@
                             <li>Status: In Development</li>
                         </ul>
 
-                        <button>Watch</button>
+                        <button class="watch-btn" data-video="binVideo">Watch Full Screen</button>
         
                 </section>
         
                 <section class="video">
-                    <video width="600" controls>
+                    <video id="binVideo" width="600" controls>
                         <source src="../videos/bin.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -116,12 +109,12 @@
                                     <li>Status: In Development</li>
                                 </ul>
 
-                                <button>Watch</button>
+                                <button class="watch-btn" data-video="bottleKnockVideo">Watch Full Screen</button>
                 
                         </section>
                 
                         <section class="video">
-                            <video width="600" controls>
+                            <video id="bottleKnockVideo" width="600" controls>
                                 <source src="../videos/bottleKnock.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -142,12 +135,12 @@
                                             <li>Status: In Development</li>
                                         </ul>
 
-                                        <button>Watch</button>
+                                        <button class="watch-btn" data-video="bottleKnockVideo">Watch Full Screen</button>
                         
                                 </section>
                         
                                 <section class="video">
-                                    <video width="600" controls>
+                                    <video id="bridgeVideo" width="600" controls>
                                         <source src="../videos/bridge.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -180,6 +173,8 @@
              <input id="email" placeholder="Enter email for updates">
             <button onclick="checkEmail()">Submit</button>
             <br>
+                        <p>&copy; <span id="currentYear"></span> Sisanda</p>
+            <script>setYear();</script>
         </ul>
     </footer>
 </body>
