@@ -11,3 +11,17 @@ function checkEmail() {
     alert("Thank you!");
   }
 }
+
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+function highlightPin(id) {
+  document.getElementById(id).style.transform = 'scale(1.2)';
+  document.getElementById(id).style.transition = 'transform 0.3s';
+}
+
+function unhighlightPin(id) {
+  document.getElementById(id).style.transform = 'scale(1)';
+}

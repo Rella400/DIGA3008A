@@ -16,6 +16,8 @@
     <script src="js/universal.js"></script>
 </head>
 <body>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
     <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
 
@@ -68,13 +70,13 @@
             <!-- Navigation Bar -->
                 <nav>
                     <ul class="navList">
-                        <li><a href="index.html" class="nav1">Home</a></li>
-                        <li><a href="pages/blog.html" class="nav2">Blog</a></li>
-                        <li><a href="pages/design.html" class="nav3">Design</a></li>
-                        <li><a href="pages/essays.html"class="nav4" >Essays</a></li>
-                        <li><a href="pages/portfolio.html" class="nav5">Portfolio</a></li>
-                        <li><a href="pages/profile.html" class="nav6">Profile</a></li>
-                        <li><a href="pages/learn.html"class="nav7">Learn</a></li>
+                        <li id="nav1" onmouseover="highlightPin('nav1')" onmouseout="unhighlightPin('nav1')"><a href="index.html" class="nav1">Home</a></li>
+                        <li id="nav2" onmouseover="highlightPin('nav2')" onmouseout="unhighlightPin('nav2')"><a href="pages/blog.html" class="nav2">Blog</a></li>
+                        <li id="nav3" onmouseover="highlightPin('nav3')" onmouseout="unhighlightPin('nav3')"><a href="pages/design.html" class="nav3">Design</a></li>
+                        <li id="nav4" onmouseover="highlightPin('nav4')" onmouseout="unhighlightPin('nav4')"><a href="pages/essays.html"class="nav4" >Essays</a></li>
+                        <li id="nav5" onmouseover="highlightPin('nav5')" onmouseout="unhighlightPin('nav5')"><a href="pages/portfolio.html" class="nav5">Portfolio</a></li>
+                        <li id="nav6" onmouseover="highlightPin('nav6')" onmouseout="unhighlightPin('nav6')"><a href="pages/profile.html" class="nav6">Profile</a></li>
+                        <li id="nav7" onmouseover="highlightPin('nav7')" onmouseout="unhighlightPin('nav7')"><a href="pages/learn.html"class="nav7">Learn</a></li>
                     </ul>
                 </nav>
         </section>

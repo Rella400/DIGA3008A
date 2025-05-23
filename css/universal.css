@@ -503,6 +503,8 @@ footer {
 
 /* JAVA SCRIPT INCORPORATION*/
 
-
-
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
  
