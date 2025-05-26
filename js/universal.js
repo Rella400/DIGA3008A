@@ -1,7 +1,12 @@
+//Scroll to top button to get back to the top from wherever you are
+
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+
+
+//Add your email at the footer (Actually enter an email to see response)
 
 function checkEmail() {
     const emailInput = document.getElementById("email");
@@ -119,3 +124,18 @@ window.addEventListener("scroll", () => {
   const scrollPercent = (scrollTop / scrollHeight) * 100;
   scrollProgress.style.width = scrollPercent + "%";
 });
+
+
+function filterBlogs() {
+  const input = document.getElementById("blogSearch").value.toLowerCase();
+  const blogs = document.querySelectorAll(".allBlogs section");
+
+  blogs.forEach(blog => {
+    const title = blog.querySelector("h2").textContent.toLowerCase();
+    if (title.includes(input)) {
+      blog.style.display = "block";
+    } else {
+      blog.style.display = "none";
+    }
+  });
+}
