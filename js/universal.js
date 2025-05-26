@@ -4,12 +4,16 @@ function scrollToTop() {
 
 
 function checkEmail() {
-  const email = document.getElementById("email").value;
-  if (!email.includes("@")) {
-    alert("Please enter a valid email.");
-  } else {
-    alert("Thank you!");
-  }
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (regex.test(email)) {
+        alert("Thanks for subscribing!");
+        emailInput.style.border = "2px solid green";
+    } else {
+        alert("Please enter a valid email address.");
+        emailInput.style.border = "2px solid red";
+    }
 }
 
 
@@ -70,3 +74,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/* KEEPING ACTIVE PAGE HIGHLIGHTED IN NAVIGATION BAR*/
+
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav a");
+
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 150 && rect.bottom >= 150) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      navLinks[index].classList.add("active");
+    }
+  });
+});
+
+
+/* 
+        NOTE FOR THE MARKER
+
+CAR ANIMATION (ATTEMPT AT LEAST) I HAVE ADDED A START JOURNEY BUTTON AT THE BOTTOM OF THE INDEX PAGE BEFORE THE FOOTER. i DID NOT GET TIME TO
+PLACE IT CREATIVELY ON THE PAGE BUT PLEASE CLICK ON IT TO SEE WHAT IT DOES. I WILL INCLUDE THIS ANIMATION IN ALL PAGES FOR EVERY BUTTON THAT 
+SENDS THE USER TO ANOTHER PAGE*/
+
+function startJourney() {
+    const car = document.getElementById("car");
+    car.classList.add("move");
+
+    setTimeout(() => {
+        window.location.href = "pages/learn.html";
+    }, 2000); 
+}

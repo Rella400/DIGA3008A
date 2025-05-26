@@ -85,6 +85,7 @@ h2{
 .rella{
     font-family:  'anton', sans-serif;
     font-size: 80px;
+    color: red;
 }
 
 p{
@@ -232,8 +233,30 @@ ul {
 
 footer {
     background-color: rgb(137, 136, 134);
+    color: white;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
-         }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'roboto condensed', Times, serif;
+    font-size: 16px;
+    border-top: 5px solid black;
+}
+
+footer a {
+    color: rgb(233, 163, 11); /* matches your highlighted text color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
 
 
 
@@ -532,7 +555,32 @@ text-align: left;
 /* JAVA SCRIPT INCORPORATION*/
 
 .dark-mode {
-  background-color: #121212;
-  color: white;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode a {
+    color: #9cdfff;
+}
+
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .footer {
+    background-color: #333;
+    color: #ccc;
+}
+
+.car {
+    position: absolute;
+    left: -100px;
+    top: 90%;
+    font-size: 2rem;
+    transition: transform 2s ease-in-out;
+}
+
+.car.move {
+    transform: translateX(110vw);
 }
  
