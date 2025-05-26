@@ -49,6 +49,7 @@ section{
   width: 1400px;
   height: 200px;
   align-content: center;
+  text-align: center;
   font-family: oswald, sans-serif;
 }
 
@@ -82,7 +83,7 @@ h2{
 }
 
 .rella{
-    font-family: 'mr dafoe', sans-serif;
+    font-family:  'anton', sans-serif;
     font-size: 80px;
 }
 
@@ -197,7 +198,7 @@ ul {
 
 
 .galleryAside {
-    background-color: rgb(144, 94, 53);
+    background-color: rgb(29, 98, 224);
             grid-row-start: 1;
             grid-row-end:3 ;
             grid-column-start: 2;
@@ -231,6 +232,7 @@ ul {
 
 footer {
     background-color: rgb(137, 136, 134);
+    text-align: center;
          }
 
 
@@ -254,6 +256,10 @@ footer {
     position: relative;
 
 
+ }
+
+ .blogBody {
+text-align: left;
  }
 
  .allBlogs p{
@@ -410,7 +416,7 @@ footer {
 
 .centerEssays{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: rgb(29, 98, 224);
     margin: 100px;
     border-radius: 50px;
@@ -486,6 +492,7 @@ footer {
     margin: 100px;
     padding: 100px;
     border-radius: 50px;
+    text-align: left;
 }
 
 .essayH{
@@ -501,7 +508,7 @@ footer {
 
 
 .carousel, .bin , .bottleKnock , .bridge{
-    background-color:  rgb(144, 94, 53);
+    background-color: rgb(29, 98, 224);
     width: 1200px;
     margin: 150px;
     border-radius: 50px;
