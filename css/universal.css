@@ -583,4 +583,16 @@ text-align: left;
 .car.move {
     transform: translateX(110vw);
 }
+
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #f31212;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
+
  

@@ -19,6 +19,8 @@ function checkEmail() {
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
+  const btn = document.querySelector("button[onclick='toggleDarkMode()']");
+  btn.textContent = document.body.classList.contains("dark-mode") ? "Switch to Light Mode" : "Switch to Dark Mode";
 }
 
 function highlightPin(id) {
@@ -106,3 +108,14 @@ function startJourney() {
         window.location.href = "pages/learn.html";
     }, 2000); 
 }
+
+
+//Scroll progress
+
+window.addEventListener("scroll", () => {
+  const scrollProgress = document.getElementById("scrollProgress");
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+  scrollProgress.style.width = scrollPercent + "%";
+});
