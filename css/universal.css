@@ -821,3 +821,9 @@ text-align: left;
       color: #444;
       font-size: 14px;
     }
+
+    .nav .active {
+  color: yellow; /* Change to any highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid yellow; /* Optional underline effect */
+}
