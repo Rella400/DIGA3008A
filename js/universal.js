@@ -115,6 +115,24 @@ function startJourney() {
 }
 
 
+const links = document.querySelectorAll('.journey-link');
+
+links.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Stop default navigation
+
+    const car = document.getElementById("car");
+    car.classList.add("move");
+
+    const targetUrl = this.href; // Store where the link was going
+
+    setTimeout(() => {
+      window.location.href = targetUrl; // Navigate after animation
+    }, 2000); // Match your animation timing
+  });
+});
+
+
 //Scroll progress
 
 window.addEventListener("scroll", () => {
@@ -138,6 +156,8 @@ function filterBlogs() {
       blog.style.display = "none";
     }
   });
+
+  
 }
 
 

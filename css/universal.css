@@ -2,12 +2,16 @@
 
 /*     INDEX PAGE AND COMMON CODE     */
 
+/* Sets up the base body style with a blue background, centers text, and establishes stacking order */
+
 body {
     background-color: rgb(154, 209, 250);
     text-align: center;
     position: relative;
     z-index: 0;
 }
+
+/* Creates a faint full-screen background image behind the content */
 
 body::before {
     content: "";
@@ -24,26 +28,57 @@ body::before {
     z-index: -1; 
 }
 
-.nav li {
-    background-image: url(../homepageimages/navPins.png);
-    width: 100px;
-    height: 150px;
-    background-size: cover;
-    background-position: -80px -20px; 
-background-repeat: no-repeat;
+/* Styles each navigation list item with a specific image */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
 }
 
+.nav li {
+  list-style: none;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  background-image: url(../homepageimages/navPins.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex; /* Flex layout to control text placement */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end;   /* Push text to bottom */
+  position: relative;
+}
+
+.nav li a {
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Adds margin and rounded corners to all <section> elements */
 section{
     margin: 10px;
     border-radius: 50px;
 }
 
+/* Aligns header items to the center using flexbox */
 .header{
     display: flex;
     justify-content: center;
 }
 
-.nav{
+
+/*.nav{
   display: flex;  
   justify-content: center;
   width: 1400px;
@@ -51,10 +86,18 @@ section{
   align-content: center;
   text-align: center;
   font-family: oswald, sans-serif;
-}
+}*/
 
-.nav li{
+/*.nav li{
     margin: 20px;
+}*/
+
+a {
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
 }
 
 .centerWelcome{
@@ -119,8 +162,7 @@ p{
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: 1100px 300px;
     width: 1400px;
-    height: 600px;
-    
+    height: 600px;  
 }
 
 .map {
@@ -134,6 +176,7 @@ p{
     background-position: center;
     background-attachment: inherit;
     background-size: cover;
+    border: 8px solid rgb(0, 0, 0);
 
 }
 
@@ -205,26 +248,39 @@ ul {
             grid-column-start: 2;
             grid-column-end: 3;
             color: white;
-            
+            padding: 10px;
+            border: 5px solid rgb(255, 255, 255);
             }
 
 
 .map-img{
-    width:60px;
+    width:50px;
     height: auto;
     margin: 0;
 }
 
 .indexImages{
     display: grid;
-    grid-template-rows: 70px 70px 70px;
-    grid-template-columns: 110px 110px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 100px 100px;
 }
 
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-zoom:hover {
+  transform: scale(2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
 
 .learnAside {
     background-color: rgb(25, 140, 227);
     color: white;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
             /*width: 300px;
             height: 200px;*/
 
@@ -387,6 +443,13 @@ text-align: left;
   color: white;
 }
 
+.blog11 {
+  background-color: rgb(39, 94, 48);
+  grid-row: 4 / 5;
+  grid-column: 3 / 5;
+  color: white;
+}
+
            .innerBlog{
 
             background-color: rgb(39, 94, 48);
@@ -397,8 +460,12 @@ text-align: left;
             outline-offset: -5px;
             border-radius: 50px; 
             position: relative;
+
         
         }
+
+
+        
 
         .published{
 
@@ -443,6 +510,7 @@ text-align: left;
     background-color: rgb(29, 98, 224);
     margin: 100px;
     border-radius: 50px;
+    border: 10px solid black;
 }
 
 .allEssays{
@@ -474,6 +542,7 @@ text-align: left;
     background-color: rgb(248, 244, 231);
     grid-row: 1/2;
     grid-column: 1/2;
+    padding: 20px;
 
    }
 
@@ -485,6 +554,7 @@ text-align: left;
     background-color: rgb(248, 244, 231);
     grid-row: 1/2;
     grid-column: 3/4;
+    padding: 20px;
    }
 
    .essay3 {
@@ -494,7 +564,7 @@ text-align: left;
     background-color: rgb(248, 244, 231);
     grid-row: 2/3;
     grid-column: 2/3;
-
+    padding: 20px;
        
    }
 
@@ -523,7 +593,7 @@ text-align: left;
 }
 
 .essayP{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 
@@ -538,6 +608,7 @@ text-align: left;
     display: flex;
     justify-content: space-around;
     gap: 5px;
+    padding: 20px;
 }
 
 .bin, .bridge{
@@ -621,4 +692,87 @@ text-align: left;
   border-radius: 5px;        /* Rounded corners */
   font-size: 16px;           /* Text size */
   cursor: pointer;           /* Hand cursor on hover */
+}
+
+.learnButton {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 8px 16px;        /* Top/Bottom + Left/Right padding */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Rounded corners */
+  font-size: 15px;           /* Text size */
+  cursor: pointer;           /* Hand cursor on hover */
+  
+}
+
+
+/*DESIGN SECTION*/
+.design {
+  text-align: left; /* Ensures all text is left-aligned */
+  padding: 50px;
+}
+
+.design img {
+  display: block;
+  margin: 100px auto; /* Centers image horizontally */
+  max-width: 70%; /* Scales image to fit within parent */
+  height: auto;     /* Maintains aspect ratio */
+  border-radius: 15px; /* Optional: rounded corners */
+  padding: 100px;
+}
+
+.design figure {
+  margin: 100px;
+  padding: 50px 0;
+}
+
+.design h2, .design h3, .design p, .design ul {
+  text-align: left;
+}
+
+/*PROFILE SECTION*/
+
+.profileCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 244, 231);
+  padding: 50px;
+  margin: 50px auto;
+  border-radius: 30px;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.profileImage img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.profileImage img:hover {
+  transform: scale(1.05);
+}
+
+.profileBio {
+  flex: 1;
+  min-width: 300px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+}
+
+.profileBio h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.profileBio p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
 }

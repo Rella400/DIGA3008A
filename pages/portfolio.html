@@ -14,8 +14,8 @@
 </head>
 <body>
     <div id="scrollProgress"></div>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
+    <button class="myButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
     <section class="header">
 
         <header id="home">
@@ -62,7 +62,10 @@
       <li>Theme: Abandoned Carnival at Night</li>
       <li>Status: In Development</li>
     </ul>
-    <button class="watch-btn" data-video="carouselVideo">Watch Full Screen</button>
+    <br>
+    <br>
+    <br>
+    <button class="watch-btn myButton" data-video="carouselVideo">Watch Full Screen</button>
   </section>
   <section class="video">
     <video id="carouselVideo" width="600" controls>
@@ -83,8 +86,10 @@
                             <li>Theme: Abandoned Carnival at Night</li>
                             <li>Status: In Development</li>
                         </ul>
-
-                        <button class="watch-btn" data-video="binVideo">Watch Full Screen</button>
+    <br>
+    <br>
+    <br>
+                        <button class="watch-btn myButton" data-video="binVideo">Watch Full Screen</button>
         
                 </section>
         
@@ -109,8 +114,11 @@
                                     <li>Theme: Abandoned Carnival at Night</li>
                                     <li>Status: In Development</li>
                                 </ul>
+                                    <br>
+    <br>
+    <br>
 
-                                <button class="watch-btn" data-video="bottleKnockVideo">Watch Full Screen</button>
+                                <button class="watch-btn myButton" data-video="bottleKnockVideo">Watch Full Screen</button>
                 
                         </section>
                 
@@ -135,8 +143,10 @@
                                             <li>Theme: Abandoned Carnival at Night</li>
                                             <li>Status: In Development</li>
                                         </ul>
-
-                                        <button class="watch-btn" data-video="bottleKnockVideo">Watch Full Screen</button>
+    <br>
+    <br>
+    <br>
+                                        <button class="watch-btn myButton" data-video="bottleKnockVideo">Watch Full Screen</button>
                         
                                 </section>
                         
@@ -172,7 +182,7 @@
             <li><a href="#">LinkedIn</a></li>
                         <br>
              <input id="email" placeholder="Enter email for updates">
-            <button onclick="checkEmail()">Submit</button>
+            <button  class="myButton" onclick="checkEmail()">Submit</button>
             <br>
                         <p>&copy; <span id="currentYear"></span> Sisanda</p>
             <script>setYear();</script>

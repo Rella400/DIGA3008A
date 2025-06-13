@@ -32,14 +32,14 @@
             <nav>
                 <ul class="nav">
 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                    <li><a href="pages/profile.html">Profile</a></li>
-                    <li><a href="pages/design.html">Design</a></li>
-                    <li><a href="pages/essays.html">Essays</a></li>
-                    <li><a href="pages/learn.html">Learn</a></li>
-                    <li><a href="pages/test.html">Test</a></li>
+                    <li><a href="index.html" class="journey-link">Home</a></li>
+                    <li><a href="pages/portfolio.html" class="journey-link">Portfolio</a></li>
+                    <li><a href="pages/blog.html"class="journey-link">Blog</a></li>
+                    <li><a href="pages/profile.html"class="journey-link">Profile</a></li>
+                    <li><a href="pages/design.html"class="journey-link">Design</a></li>
+                    <li><a href="pages/essays.html"class="journey-link">Essays</a></li>
+                    <li><a href="pages/learn.html"class="journey-link">Learn</a></li>
+                    <li><a href="pages/test.html"class="journey-link">Test</a></li>
                 </ul>
             </nav>
         </header>
@@ -86,11 +86,11 @@
 
                 <section class="learnAside">
                     <h2>Learn How To Drive</h2>
-                    <p>Join me as I learn the rules of the road. Lets FINALLY get this learner's licence</p>
+                    <p>Lets FINALLY get this learner's licence</p>
                     <!-- This is where I will place a 'Start Learning' Button -->
                     <section class="startJourney">
-                        <button class="myButton" onclick="startJourney()">Start the Journey</button>
-                        <div id="car" class="car">🚗</div>
+                        <button class="learnButton" onclick="startJourney()">Start the Journey</button>
+                        <div id="car" class="car" style="font-size: 80px;">🚗</div>
                     </section>
                 </section>
 
@@ -99,12 +99,12 @@
 
                     <p>Explore my collection of digital paintings, game assets, and artistic experiments that reflect my growth and passion for digital art.</p>        
                     <figure class="indexImages">
-                        <a href="pages/portfolio.html"> <img src="homepageimages/bin.png" class="map-img" alt="bin"></a>
-                        <a href="pages/portfolio.html"><img src="homepageimages/bottleKnock.png" class="map-img" alt="bottleKnock"> </a>
-                        <a href="pages/portfolio.html"><img src="homepageimages/bridge.png" class="map-img" alt="bridge"></a>
-                        <a href="pages/portfolio.html"><img src="homepageimages/carousel.png" class="map-img" alt="carousel"></a>
-                        <a href="pages/portfolio.html"><img src="homepageimages/clown.png" class="map-img" alt="clown"></a>
-                        <a href="pages/portfolio.html"><img src="homepageimages/ferris.png" class="map-img" alt="ferris wheel"></a>
+                        <a href="pages/portfolio.html" title="Bin Model: Click to view"> <img src="homepageimages/bin.png" class="map-img hover-zoom" alt="bin"></a>
+                        <a href="pages/portfolio.html" title="Bottle Knock Model: Click to view"><img src="homepageimages/bottleKnock.png" class="map-img hover-zoom" alt="bottleKnock"> </a>
+                        <a href="pages/portfolio.html" title="Bridge Model: Click to view"><img src="homepageimages/bridge.png" class="map-img hover-zoom" alt="bridge"></a>
+                        <a href="pages/portfolio.html"title="Carousel Model: Click to view" ><img src="homepageimages/carousel.png" class="map-img hover-zoom" alt="carousel"></a>
+                        <a href="pages/portfolio.html"title="Clown Model: Click to view" ><img src="homepageimages/clown.png" class="map-img hover-zoom" alt="clown"></a>
+                        <a href="pages/portfolio.html"title="Ferris Wheel Model: Click to view" ><img src="homepageimages/ferris.png" class="map-img hover-zoom" alt="ferris wheel"></a>
 
                     </figure>
                 </section>
@@ -138,7 +138,7 @@
             <br>
 
             <input id="email" placeholder="Enter email for updates">
-            <button onclick="checkEmail()">Submit</button>
+            <button  class="myButton" onclick="checkEmail()">Submit</button>
             <br>
             <footer>
             <p>&copy; <span id="currentYear"></span> Sisanda</p>

@@ -16,9 +16,9 @@
         <script src="../js/universal.js"></script>
 </head>
 <body>
-        <div id="scrollProgress"></div>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
+    <div id="scrollProgress"></div>
+    <button class="myButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
     <section class="header">
 
@@ -35,8 +35,8 @@
                 <li><a href="learn.html">Learn</a></li>
             </ul>
         </nav>
-    </header>
-</section>
+        </header>
+    </section>
 
     <main>
 
@@ -145,7 +145,7 @@
             <li><a href="#">LinkedIn</a></li>
                         <br>
              <input id="email" placeholder="Enter email for updates">
-            <button onclick="checkEmail()">Submit</button>
+           <button  class="myButton" onclick="checkEmail()">Submit</button>
             <br>
                         <p>&copy; <span id="currentYear"></span> Sisanda</p>
             <script>setYear();</script>
