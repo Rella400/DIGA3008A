@@ -161,3 +161,62 @@ function filterBlogs() {
 }
 
 
+//GAME FUNCTIONS
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const words = [
+      { word: "mirror", hint: "Used to check your surroundings before making a move." },
+      { word: "yield", hint: "Give way to other vehicles when necessary." },
+      { word: "brake", hint: "Slows or stops the vehicle." },
+      { word: "hazard", hint: "A potential source of danger on the road." },
+      { word: "seatbelt", hint: "Used to secure occupants in the car." },
+      { word: "pedestrian", hint: "A person walking on the road." },
+      { word: "overtake", hint: "To pass another vehicle moving in the same direction." },
+      { word: "indicator", hint: "Shows your intention to turn or change lanes." }
+    ];
+
+    let currentIndex = 0;
+    let currentWord = "";
+
+    function shuffleWord(word) {
+      return word.split("").sort(() => 0.5 - Math.random()).join("");
+    }
+
+    function loadWord() {
+      const item = words[currentIndex];
+      currentWord = item.word;
+      document.getElementById("scrambled-word").textContent = shuffleWord(currentWord);
+      document.getElementById("guess").value = "";
+      document.getElementById("message").textContent = "";
+      document.getElementById("hint").textContent = "";
+    }
+
+    function checkAnswer() {
+      const guess = document.getElementById("guess").value.toLowerCase();
+      if (guess === currentWord) {
+        document.getElementById("message").textContent = "Correct!";
+        currentIndex++;
+        if (currentIndex < words.length) {
+          setTimeout(loadWord, 1000);
+        } else {
+          document.getElementById("scrambled-word").textContent = "Game Complete!";
+          document.getElementById("guess").style.display = "none";
+          document.getElementById("submit").style.display = "none";
+          document.getElementById("hint-btn").style.display = "none";
+        }
+      } else {
+        document.getElementById("message").textContent = "Try again!";
+      }
+    }
+
+    function showHint() {
+      document.getElementById("hint").textContent = `Answer: ${currentWord}`;
+    }
+
+    // Button event listeners
+    document.getElementById("submit").addEventListener("click", checkAnswer);
+    document.getElementById("hint-btn").addEventListener("click", showHint);
+
+    // Start the game
+    loadWord();
+  });

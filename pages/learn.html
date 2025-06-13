@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn</title>
+    <title>K53 Word Scramble Game</title>
     <link rel="stylesheet" href="../css/universal.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mr+Dafoe&display=swap" rel="stylesheet">
@@ -12,43 +12,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <script src="../js/universal.js"></script>
 </head>
-    <body>
-            <div id="scrollProgress"></div>
-           <button class="myButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <button class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
-        <section class="header">
+<body>
+    <div id="scrollProgress"></div>
+    <button class="myButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
-            <header id="home">
-        <nav>
-            <ul class="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="learn.html">Learn</a></li>
+    <section class="header">
 
-            </ul>
-        </nav>
-    </header>
-</section>
+        <header id="home">
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="essays.html">Essays</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </section>
 
 
-        <div class="centerWelcome">
+    <div class="centerWelcome">
 
-            <section class="welcome">
-                <div class="inner">
+        <section class="welcome">
+            <div class="inner">
     
                 <h1>Driving Theory...but FUN</h1>
-                <p>THIS PAGE WILL BE OOCUPIED BY A BUNCH OF MINI GAMES, THAT i WILL CREATE USING JavaScript, AND THEY WILL HELP AN INTERESTED VISITOR LEARN THE RULES OF THE ROAD. THIS SECTION IS WHERE I WILL BE PRACTICING MY JavaScript AND SHARPENING MY SKILLS. IN THE PROCESS, I MYSELF WILL BE LEARNING THE RULES OF THE ROAD TO PREPARE TO WRITE MY LEARNER DRIVER TEST. MY 
-                    HOPE IS TO SHARPEN MY JavaScript SKILLS, LEARN THE RULES OF THE ROAD AS WELL AS HELP ANYONE ELSE WHO MIGHT WANT TO LEARN, ALL AT THE SAME TIME. </p>
+                <p>THIS PAGE WILL BE OOCUPIED BY, WHAT I THOUGHT WOULD BE, 'A BUNCH OF MINI GAMES', THAT i WILL CREATE USING JavaScript, AND THEY WILL HELP AN INTERESTED 
+                    VISITOR LEARN THE RULES OF THE ROAD. INSTEAD MY CAPABILITIES ONLY ALLOWED ME TO CREATE 1 GAME (THAT ACTUALLY FUNCTIONS). THIS SECTION IS WHERE I WILL BE PRACTICING MY JavaScript AND SHARPENING MY SKILLS. 
+                    IN THE PROCESS, I MYSELF WILL BE LEARNING THE RULES OF THE ROAD TO PREPARE TO WRITE MY LEARNER DRIVER TEST. MY 
+                    HOPE IS TO SHARPEN MY JavaScript SKILLS, LEARN THE RULES OF THE ROAD AS WELL AS HELP ANYONE ELSE WHO MIGHT WANT TO LEARN, 
+                    ALL AT THE SAME TIME. </p>
                 
-                </div>
-            </section>
+            </div>
+        </section>
     
      </div>
+
+     <section class="games">
+        <div class= "game-container">
+            <h2>K53 Word Scramble</h2>
+            <p>Unscramble the word below:</p>
+                 <div id="scrambled-word">Loading...</div>
+            <input class= "learnInput" type="text" id="guess" placeholder="Type your guess here" />
+            <button class="myButton" id="submit" onclick="checkAnswer()">Submit</button>
+            <!--<button class="learnButton" onclick="showHint()">Show Answer</button>-->
+            <button class="myButton" id="hint-btn">Hint</button>
+            <p id="message"></p>
+            <p id="hint"></p>
+        </div>
+
+     </section>
+
+    <!-- <div id="scrambled-word">Loading...</div>
+<input type="text" id="guess" placeholder="Your guess here">
+<button id="submit">Submit</button>
+<button id="hint-btn">Hint</button>
+<p id="message"></p>
+<p id="hint"></p>-->
 
         <!-- Have headings that have links leading to their respective pages with games and quizzes. The heading should have a paragraph that 
          explains what the reader will find after pressing the link.--> 
