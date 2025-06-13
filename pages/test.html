@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/test.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <script src="../js/test.js"></script>
+    <script src="js/test.js"></script>
 </head>
-<body>
+<body class="testBody">
 
-    <section class="header">
+    <section class="testHeader">
 
-        <header id="home">
+        <header id="testHome">
 
         <nav>
-            <ul class="nav">
+            <ul class="testNav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="blog.html">Dev Blog</a></li>
                 <li><a href="design.html">UI/UX Manual</a></li>
@@ -34,14 +34,14 @@
 </section>
 
 
-    <main>
-        <div class="centerWelcome">
+    <main class="testMain">
+        <div>
 
-            <section class="welcome">
-                <div class="inner">
+            <section>
+                <div>
     
-                <h1>     About Me: 3D Modeling Journey</h1>
-                <p>As a multidisciplinary digital artist and game designer, 3D modeling has become one of my favorite ways to bring imagination to life. My work in Blender focuses on storytelling through space, structure, and form — whether it's designing eerie abandoned carnival rides for a first-person narrative game, or creating detailed props and environmental elements that reflect mood and atmosphere.
+                <h1 class="testH1">     About Me: 3D Modeling Journey</h1>
+                <p class="testP">As a multidisciplinary digital artist and game designer, 3D modeling has become one of my favorite ways to bring imagination to life. My work in Blender focuses on storytelling through space, structure, and form — whether it's designing eerie abandoned carnival rides for a first-person narrative game, or creating detailed props and environmental elements that reflect mood and atmosphere.
 
                     Every model I create is part of a bigger vision. I don’t just model objects — I build narratives. My projects often revolve around emotional themes, using texture, lighting, and composition to evoke memory, mystery, and connection. From rusted Ferris wheels to old mascot statues and haunted generator rooms, I put intention into every edge and bevel.
                     
@@ -49,6 +49,33 @@
                     
                     Whether you’re here to explore my models or simply curious about the process behind them, thank you for taking a look. Every asset I share is a piece of a story I’m still telling — one frame, one polygon at a time.
                     
+               <p> <img src="../homepageimages/bin.png" class="map-img" alt="bin"> </p>
+
+               <article class="carousel">
+  <section class="description">
+    <h2>Carousel</h2>
+    <ul>
+      <li>Tools: Blender</li>
+      <li>Theme: Abandoned Carnival at Night</li>
+      <li>Status: In Development</li>
+    </ul>
+    <button class="watch-btn" data-video="carouselVideo">Watch Full Screen</button>
+  </section>
+  <section class="video">
+    <video id="carouselVideo" width="600" controls>
+      <source src="../videos/carousel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+</article>
+
+ <a href="portfolio.html"><img src="../homepageimages/bottleKnock.png" class="map-img" alt="bottleKnock"> </a>
+
+
+ <br>
+
+ <button type="button">Player 1: Chris</button>
+                
                 </div>
             </section>
            

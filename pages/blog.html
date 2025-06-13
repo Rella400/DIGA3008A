@@ -18,164 +18,173 @@
 </head>
 
 <body>
-        <div id="scrollProgress"></div>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
+    <div id="scrollProgress"></div>
+    <button  class="myButton"onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button  class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
     <section class="header">
 
         <header id="home">
 
-        <nav>
-            <ul class="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="learn.html">Learn</a></li>
-            </ul>
-        </nav> 
-    </header>
-</section>
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="essays.html">Essays</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                </ul>
+            </nav> 
+        </header>
+    </section>
 
     <main>
 
         <div style="text-align:center; margin: 20px;">
-  <input type="text" id="blogSearch" placeholder="Search blog posts..." oninput="filterBlogs()" style="padding: 10px; width: 80%; max-width: 400px;">
-</div>
+            <input type="text" id="blogSearch" placeholder="Search blog posts..." oninput="filterBlogs()" style="padding: 10px; width: 80%; max-width: 400px;">
+        </div>
 
 
         <!-- Weekly Blog Posts -->
     
 
-    <div class="centerWelcome">
+        <div class="centerWelcome">
 
             <section class="welcome">
                 <div class="inner">
     
-                <h1>My Reflections</h1>
-                <p>Documenting my journey in web development, design, and learning how to drive. <br> 
+                    <h1>My Reflections</h1>
+                    <p>Documenting my journey in web development, design, and learning how to drive. <br> 
                     This blog captures my reflections, progress, challenges, and successes while building my portfolio website.</p>
                 
                 </div>
             </section>
     
-     </div>
-
-     <div class="centerBlogs">
-
-     <div class="allBlogs">
-
-
-        <section class="blog1">
-            <div class="innerBlog">
-            <h2 class="entry-title">Building Foundations with Semantic HTML and GitHub Setup</h2>
-            <time datetime="2025-02-17" class="published">February 17, 2025 </time>
-            <p>In the first week, I focused on understanding semantic markup. I learned how HTML elements can provide contextual meaning to browsers and assistive technologies. <br> 
-                This foundational knowledge helped me structure my content in a way that improves accessibility and SEO. My main takeaway was that meaningful markup contributes to a website’s usability and discoverability.</p>
-            <br> <p>I also set up my repository on GitHub, following the naming conventions discussed in lectures. This step ensured that my project is well-organized and easy to access online.</p>
-            <a href="blog1.html" class="read-more">Read More</a>
         </div>
-        </section>
+
+        <div class="centerBlogs">
+
+            <div class="allBlogs">
 
 
-        <section class="blog2">
-            <div class="innerBlog">
-            <h2 class="entry-title">Structuring Content for Scalability and Searchability </h2>
-            <time datetime="2025-02-24" class="published">February 24, 2025 </time>
-            <p>This week, I focused on structuring my content in a modular way. I organized the project folders to reflect the hierarchical information structure, making it easier to manage and scale. Additionally, I explored metadata and how it can guide browsers to interpret content efficiently. This involved adding meaningful metadata tags to each page, such as author, description, and keywords.</p>
-            <p>Another key focus was incorporating microformats to make my blog posts searchable and properly indexed by search engines. I chose the h-entry microformat, which ensures that each post is well-defined and easy to reference.</p>
-            <a href="blog2.html" class="read-more">Read More</a>
-        </div>
-        </section>
+                <section class="blog1">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Building Foundations with Semantic HTML and GitHub Setup</h2>
+                        <time datetime="2025-02-17" class="published">February 17, 2025 </time>
+                        <p>In the first week, I focused on understanding semantic markup. I learned how HTML elements can provide contextual meaning to browsers and assistive technologies. <br> 
+                            This foundational knowledge helped me structure my content in a way that improves accessibility and SEO. My main takeaway was that meaningful markup contributes to a website’s usability and discoverability.</p>
+                        <br> <p>I also set up my repository on GitHub, following the naming conventions discussed in lectures. This step ensured that my project is well-organized and easy to access online.</p>
+                        <a href="blog1.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-        <section class="blog3">
-            <div class="innerBlog">
-            <h2 class="entry-title">Balancing Accessibility and Creativity <br>
-                in a Road-Themed Design </h2>
-            <time datetime="2025-03-03" class="published">March 03, 2025</time>
-            <p>This week, I focused on enhancing accessibility by using semantic HTML elements correctly and adding ARIA attributes where necessary. I also began drafting my wireframes for the design section, making sure they align with the goal of a clear, road-themed learning experience. The challenge was balancing thematic creativity with practical accessibility.</p>
-            <a href="blog3.html" class="read-more">Read More</a>
-        </div>
-        </section>
 
-        <section class="blog4">
-            <div class="innerBlog">
-            <h2 class="entry-title">Reflecting on Thematic Design and Usability</h2>
-            <time datetime="2025-03-10" class="published">March 10, 2025</time>
-            <p>This week was dedicated to reflection on my progress and overcoming challenges related to maintaining semantic integrity while pursuing creative presentation. I realized that while thematic elements are important, they should not compromise the website’s usability or clarity.</p>
-            <p>To address this, I refined my design plan, ensuring that thematic elements like road sign graphics are complemented by clear text and descriptive headings. Additionally, I documented my progress and included reflections on what I learned from balancing aesthetics with functionality.</p>
-            <a href="blog4.html" class="read-more">Read More</a>
-        </div>
-        </section>
+                <section class="blog2">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Structuring Content for Scalability and Searchability </h2>
+                        <time datetime="2025-02-24" class="published">February 24, 2025 </time>
+                        <p>This week, I focused on structuring my content in a modular way. I organized the project folders to reflect the hierarchical information structure, making it easier to manage and scale. Additionally, I explored metadata and how it can guide browsers to interpret content efficiently. This involved adding meaningful metadata tags to each page, such as author, description, and keywords.</p>
+                        <p>Another key focus was incorporating microformats to make my blog posts searchable and properly indexed by search engines. I chose the h-entry microformat, which ensures that each post is well-defined and easy to reference.</p>
+                        <a href="blog2.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-        <section class="blog5">
-            <div class="innerBlog">
-            <h2 class="entry-title">Addressing User Needs Through Thematic UI and UX</h2>
-            <time datetime="2025-03-10" class="published">March 10, 2025</time>
-            <p>My website is designed as an interactive learning tool for individuals preparing for their learner’s and driver’s licenses, 
-                including myself. The primary users are beginner drivers who need clear, engaging, and structured lessons on road signs, 
-                traffic rules, and safe driving techniques. The website’s theme is inspired by the K53 system, with a visual and interactive 
-                approach that mimics road navigation to make learning intuitive and enjoyable.</p>
-            <a href="blog5.html" class="read-more">Read More</a>
-        </div>
-        </section>
+                <section class="blog3">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Balancing Accessibility and Creativity <br>
+                            in a Road-Themed Design </h2>
+                        <time datetime="2025-03-03" class="published">March 03, 2025</time>
+                        <p>This week, I focused on enhancing accessibility by using semantic HTML elements correctly and adding ARIA attributes where necessary. I also began drafting my wireframes for the design section, making sure they align with the goal of a clear, road-themed learning experience. The challenge was balancing thematic creativity with practical accessibility.</p>
+                        <a href="blog3.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-        <section class="blog6">
-            <div class="innerBlog">
-            <h2 class="entry-title">Crafting an Interactive, Road-Themed <br>Learning and Portfolio Website</h2>
-            <time datetime="2025-03-10" class="published">March 10, 2025</time>
-            <p>The goal of this website is to seamlessly combine practical learning and portfolio presentation by using the driving manual theme as an interactive and engaging framework. The aesthetic will blend road safety and driving elements with a clean, modern design, creating a visually appealing yet 
-                educational experience. The website will guide users as if they are on a journey, using road signs and driving metaphors to structure content..</p>
-            <a href="blog6.html" class="read-more">Read More</a>
-        </div>
-        </section>
+                <section class="blog4">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Reflecting on Thematic Design and Usability</h2>
+                        <time datetime="2025-03-10" class="published">March 10, 2025</time>
+                        <p>This week was dedicated to reflection on my progress and overcoming challenges related to maintaining semantic integrity while pursuing creative presentation. I realized that while thematic elements are important, they should not compromise the website’s usability or clarity.</p>
+                        <p>To address this, I refined my design plan, ensuring that thematic elements like road sign graphics are complemented by clear text and descriptive headings. Additionally, I documented my progress and included reflections on what I learned from balancing aesthetics with functionality.</p>
+                        <a href="blog4.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-        <section class="blog7">
-            <div class="innerBlog">
-            <h2 class="entry-title">Analyzing Real-World UX/UI Examples</h2>
-            <time datetime="2025-03-10" class="published">March 10, 2025</time>
-            <p>This week was dedicated to reflection on my progress and overcoming challenges related to maintaining semantic integrity while pursuing creative presentation. I realized that while thematic elements are important, they should not compromise the website’s usability or clarity.</p>
-            <p>To address this, I refined my design plan, ensuring that thematic elements like road sign graphics are complemented by clear text and descriptive headings. Additionally, I documented my progress and included reflections on what I learned from balancing aesthetics with functionality.</p>
-            <a href="blog7.html" class="read-more">Read More</a>
-            </div>
-        </section>
+                <section class="blog5">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Addressing User Needs Through Thematic UI and UX</h2>
+                        <time datetime="2025-03-10" class="published">March 10, 2025</time>
+                        <p>My website is designed as an interactive learning tool for individuals preparing for their learner’s and driver’s licenses, 
+                            including myself. The primary users are beginner drivers who need clear, engaging, and structured lessons on road signs, 
+                            traffic rules, and safe driving techniques. The website’s theme is inspired by the K53 system, with a visual and interactive 
+                            approach that mimics road navigation to make learning intuitive and enjoyable.</p>
+                        <a href="blog5.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-        <section class="blog8">
-  <div class="innerBlog">
-    <h2 class="entry-title">Week 8: Designing a Humane and Ethical Internet: Putting People Before Profit</h2>
-    <time datetime="2025-03-17" class="published">March 17, 2025</time>
-    <p>To me, a fair and ethical internet is one where the user’s well-being comes first. It’s not something that should be added later, it should be the main goal. I started to understand this better after learning about the work of Tristan Harris and the Center for Humane Technology. They believe that websites and apps should be designed to protect people’s mental health, not just to make money. Right now, a lot of the internet feels like a trap. It pulls people in with endless scrolling, annoying pop-ups, and smart systems (called algorithms) that decide what we see without asking us. </p>
+                <section class="blog6">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Crafting an Interactive, Road-Themed <br>Learning and Portfolio Website</h2>
+                        <time datetime="2025-03-10" class="published">March 10, 2025</time>
+                        <p>The goal of this website is to seamlessly combine practical learning and portfolio presentation by using the driving manual theme as an interactive and engaging framework. The aesthetic will blend road safety and driving elements with a clean, modern design, creating a visually appealing yet 
+                            educational experience. The website will guide users as if they are on a journey, using road signs and driving metaphors to structure content..</p>
+                        <a href="blog6.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-    <a href="blog8.html" class="read-more">Read More</a>
-  </div>
-</section>
+                <section class="blog7">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Analyzing Real-World UX/UI Examples</h2>
+                        <time datetime="2025-03-10" class="published">March 10, 2025</time>
+                        <p>This week was dedicated to reflection on my progress and overcoming challenges related to maintaining semantic integrity while pursuing creative presentation. I realized that while thematic elements are important, they should not compromise the website’s usability or clarity.</p>
+                        <p>To address this, I refined my design plan, ensuring that thematic elements like road sign graphics are complemented by clear text and descriptive headings. Additionally, I documented my progress and included reflections on what I learned from balancing aesthetics with functionality.</p>
+                        <a href="blog7.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-<section class="blog9">
-  <div class="innerBlog">
-    <h2 class="entry-title">Week 9: Digital Inequality Is Social Inequality</h2>
-    <time datetime="2025-03-24" class="published">March 24, 2025</time>
-    <p>In their article “Digital Inequalities and Why They Matter,” Robinson and others (2015) explain that digital inequality, like not having internet or tech skills, is not separate from other social problems like racism, sexism, or poverty. Instead, it’s closely connected to them. They argue that digital inequality should be taken just as seriously as issues related to race, gender, or class. After reading this, I started to see the internet differently, not just as a neutral tool, but as a space that reflects who has power and access.  </p>
-    <a href="blog9.html" class="read-more">Read More</a>
-  </div>
-</section>
+                <section class="blog8">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Designing a Humane and Ethical Internet: Putting People Before Profit</h2>
+                        <time datetime="2025-03-17" class="published">March 17, 2025</time>
+                        <p>To me, a fair and ethical internet is one where the user’s well-being comes first. It’s not something that should be added later, it should be the main goal. I started to understand this better after learning about the work of Tristan Harris and the Center for Humane Technology. They believe that websites and apps should be designed to protect people’s mental health, not just to make money. Right now, a lot of the internet feels like a trap. 
+                            It pulls people in with endless scrolling, annoying pop-ups, and smart systems (called algorithms) that decide what we see without asking us. </p>
+                        <a href="blog8.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
-<section class="blog10">
-  <div class="innerBlog">
-    <h2 class="entry-title">Week 10: My Journey with JavaScript and Decolonial Design</h2>
-    <time datetime="2025-04-01" class="published">April 1, 2025</time>
-    <p>As I keep building my website based on the K53 driving manual, I’ve started using JavaScript to make it more interactive. Even though I’m still new to the language, I’ve begun setting up features like a fun road sign quiz, hover effects on the menu, and pop-up messages that share useful driving tips or safety facts from South Africa. These features will help make the site more fun to use, more useful, and better suited for local users. </p>
-</p>
-    <a href="blog10.html" class="read-more">Read More</a>
-  </div>
-</section>
+                <section class="blog9">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Digital Inequality Is Social Inequality</h2>
+                        <time datetime="2025-03-24" class="published">March 24, 2025</time>
+                        <p>In their article “Digital Inequalities and Why They Matter,” Robinson and others (2015) explain that digital inequality, like not having internet or tech skills, is not separate from other social problems like racism, sexism, or poverty. Instead, it’s closely connected to them. They argue that digital inequality should be taken just as seriously as issues related to race, gender, or class. After reading this, I started to see the internet differently, not just as a neutral tool, but as a space that reflects who has power and access.  </p>
+                        <a href="blog9.html" class="read-more">Read More</a>
+                    </div>
+                </section>
+
+                <section class="blog10">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">My Journey with JavaScript and Decolonial Design</h2>
+                        <time datetime="2025-04-01" class="published">April 1, 2025</time>
+                        <p>As I keep building my website based on the K53 driving manual, I’ve started using JavaScript to make it more interactive. Even though I’m still new to the language, I’ve begun setting up features like a fun road sign quiz, hover effects on the menu, and pop-up messages that share useful driving tips or safety facts from South Africa. These features will help make the site more fun to use, more useful, and better suited for local users. </p>
+                        </p>
+                        <a href="blog10.html" class="read-more">Read More</a>
+                    </div>
+                </section>
+
+                <section class="blog11">
+                    <div class="innerBlog">
+                        <h2 class="entry-title">Ethics and Justice in Creative and Technical Practice: Centering Care in Art and Code</h2>
+                        <time datetime="2025-06-13" class="published">June 13, 2025</time>
+                        pages/blog11.html
+                        <a href="blog11.html" class="read-more">Read More</a>
+                    </div>
+                </section>
 
             
-    </div>
+            </div>
 
-    </div>
+        </div>
 
     </main>
 

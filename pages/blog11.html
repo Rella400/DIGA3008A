@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/universal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <script src="../js/universal.js"></script>
+</head>
+<body class = blogBody>
+        <div id="scrollProgress"></div>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
+
+        <section class="header">
+
+            <header id="home">
+
+                <nav>
+                    <ul class="nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="essays.html">Essays</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                    </ul>
+                </nav> 
+            </header>
+        </section>
+
+
+
+
+
+        <main class="mainArticle">
+
+
+            <article>
+
+                <section class="blogHeading">
+
+                    <h1>Ethics and Justice in Creative and Technical Practice: Centering Care in Art and Code</h1>
+                    <time datetime="2025-02-17">June 13, 2025</time>
+                    <p>Justice and ethics are essential in both artistic and programming practices, especially in a world where the work we create, whether visual, digital, or code, affects real people. In my own work as both an artist and someone who codes, I believe it's important to make decisions that are respectful, responsible, and mindful of the power those decisions hold. Whether I'm creating an artwork that touches on social issues or writing a program that others will use, I try to make sure I’m not harming others or speaking over voices that deserve to be heard. </p>
+
+            
+                </section>
+
+                <section class="blogArticle">
+
+                    <p>In art, I think embracing cultural humility is one of the most important things. Cultural humility means knowing that I don’t know everything, especially when it comes to experiences that aren’t my own. If I choose to tell a story about a community I don’t belong to, I shouldn’t just rely on assumptions or second-hand knowledge. Instead, I should try to learn directly from the people involved and invite them into the creative process. As mentioned in RMIT’s writings, this kind of ethical collaboration means being willing to share control over the project, or even give it up, if it means the final piece is more honest and respectful. It’s not about centering myself, but about honoring the people the work is about. In coding, I think a similar mindset is needed. Programmers might not always see themselves as people with social responsibility, but the truth is that the programs we write can have a big impact, on privacy, on fairness, and on people’s lives. Ethical coding means thinking about who the code is for, who it could harm, and whether it includes everyone equally. As mentioned in articles on Medium and LinkedIn, developers must protect user privacy and avoid building programs that reinforce racism, sexism, or other forms of bias. This requires more than just good intentions, it takes active effort, regular learning, and sometimes uncomfortable conversations. But it’s worth it if it leads to safer, fairer technology. </p>
+                    <p>Something that connects both fields, art and programming, is the idea of the “ethics of care.” This is a way of thinking that focuses on how our work affects others, especially those who are often overlooked. Instead of asking “Does this work?” or “Is this new and exciting?”, it asks “Who does this help? Who does it hurt?” In art, this might mean avoiding images or stories that cause harm. In coding, it could mean designing apps that are easy for people with disabilities to use. The ethics of care reminds us that people matter more than profit or recognition. Art can also be a tool for social justice. When done thoughtfully, it can highlight injustice and give voice to those who are silenced. But this only works if the artist is honest and not just using other people’s pain to gain attention. As Fiveable points out, this means being committed to the truth and willing to create work that challenges people, even if it's uncomfortable. </p>
+                    <p>In software development, being transparent and accountable is key. Users should know what a program does and how their data is being used. If something goes wrong, developers must admit it, fix it, and do better next time. Articles from X-Team and LinkedIn stress how important it is to build trust through open communication and a commitment to ethical values.  I believe that being ethical in both art and code isn’t just a bonus, it’s necessary. Whether I’m telling a story or solving a technical problem, I want my work to reflect care, respect, and justice. That means always being willing to listen, to learn, and to put people first. </p>
+
+                </section>
+
+            </article>
+
+        </main>
+
+    <footer>
+        <h3>Stay Connected</h3>
+        <p>Email: 2722723@students.wits.ac.za | Phone: +27 78 1234567</p>
+        <p>Address: Symons Road, Brixton, Johannesburg, South Africa</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+                        <br>
+             <input id="email" placeholder="Enter email for updates">
+            <button onclick="checkEmail()">Submit</button>
+            <br>
+                        <p>&copy; <span id="currentYear"></span> Sisanda</p>
+            <script>setYear();</script>
+        </ul>
+    </footer>
+    
+</body>
+</html>

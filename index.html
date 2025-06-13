@@ -15,98 +15,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="js/universal.js"></script>
 </head>
-<body>
-        <div id="scrollProgress"></div>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-    <button onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
+<body>
+    <div id="scrollProgress"></div>
+
+    <button class="myButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <button class="myButton" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;">↑ Top</button>
 
 
     <section class="header">
 
-    <header id="home">
+        <header id="home">
 
-    <!-- Navigation Bar -->
-        <nav>
-            <ul class="nav">
+        <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav">
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/portfolio.html">Portfolio</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
-                <li><a href="pages/profile.html">Profile</a></li>
-                <li><a href="pages/design.html">Design</a></li>
-                <li><a href="pages/essays.html">Essays</a></li>
-                <li><a href="pages/learn.html">Learn</a></li>
-            </ul>
-        </nav>
-    </header>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/profile.html">Profile</a></li>
+                    <li><a href="pages/design.html">Design</a></li>
+                    <li><a href="pages/essays.html">Essays</a></li>
+                    <li><a href="pages/learn.html">Learn</a></li>
+                    <li><a href="pages/test.html">Test</a></li>
+                </ul>
+            </nav>
+        </header>
     </section>
 
     <main>
 
         <div class="centerWelcome">
-        <section class="welcome">
-            <div class="inner">
+            <section class="welcome">
+                <div class="inner">
 
-            <h1>WELCOME</h1>
-            <h2 class="rella">Rella's Portfolio</h2>
-            <p>Hi, my name is Sisanda "Rella" Marelane and this is my portfolio website, where creativity meets functionality. <br> like a journey on the open road, my work is about 
+                <h1>WELCOME</h1>
+                <h2 class="rella">Rella's Portfolio</h2>
+                <p>Hi, my name is Sisanda "Rella" Marelane and this is my portfolio website, where creativity meets functionality. <br> like a journey on the open road, my work is about 
                 exploration, problem-solving, and continuous learning. <br> Buckle up as I take you through my projects, experiences, and insights 
                 in the world of design and development.</p>
             
+                </div>
+            </section>
+
+        </div>
+
+        <div class="centerMap">
+
+            <div class="mapContainer">
+
+                <section class="map">
+
+                    <h2>Where To ?</h2>
+
+                    <!-- Navigation Bar -->
+                    <nav>
+                        <ul class="navList">
+                            <li id="nav1" onmouseover="highlightPin('nav1')" onmouseout="unhighlightPin('nav1')"><a href="index.html" class="nav1">Home</a></li>
+                            <li id="nav2" onmouseover="highlightPin('nav2')" onmouseout="unhighlightPin('nav2')"><a href="pages/blog.html" class="nav2">Blog</a></li>
+                            <li id="nav3" onmouseover="highlightPin('nav3')" onmouseout="unhighlightPin('nav3')"><a href="pages/design.html" class="nav3">Design</a></li>
+                            <li id="nav4" onmouseover="highlightPin('nav4')" onmouseout="unhighlightPin('nav4')"><a href="pages/essays.html"class="nav4" >Essays</a></li>
+                            <li id="nav5" onmouseover="highlightPin('nav5')" onmouseout="unhighlightPin('nav5')"><a href="pages/portfolio.html" class="nav5">Portfolio</a></li>
+                            <li id="nav6" onmouseover="highlightPin('nav6')" onmouseout="unhighlightPin('nav6')"><a href="pages/profile.html" class="nav6">Profile</a></li>
+                            <li id="nav7" onmouseover="highlightPin('nav7')" onmouseout="unhighlightPin('nav7')"><a href="pages/learn.html"class="nav7">Learn</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="learnAside">
+                    <h2>Learn How To Drive</h2>
+                    <p>Join me as I learn the rules of the road. Lets FINALLY get this learner's licence</p>
+                    <!-- This is where I will place a 'Start Learning' Button -->
+                    <section class="startJourney">
+                        <button class="myButton" onclick="startJourney()">Start the Journey</button>
+                        <div id="car" class="car">🚗</div>
+                    </section>
+                </section>
+
+                <section class="galleryAside">
+                    <h2>Tour Through My Work</h2>
+
+                    <p>Explore my collection of digital paintings, game assets, and artistic experiments that reflect my growth and passion for digital art.</p>        
+                    <figure class="indexImages">
+                        <a href="pages/portfolio.html"> <img src="homepageimages/bin.png" class="map-img" alt="bin"></a>
+                        <a href="pages/portfolio.html"><img src="homepageimages/bottleKnock.png" class="map-img" alt="bottleKnock"> </a>
+                        <a href="pages/portfolio.html"><img src="homepageimages/bridge.png" class="map-img" alt="bridge"></a>
+                        <a href="pages/portfolio.html"><img src="homepageimages/carousel.png" class="map-img" alt="carousel"></a>
+                        <a href="pages/portfolio.html"><img src="homepageimages/clown.png" class="map-img" alt="clown"></a>
+                        <a href="pages/portfolio.html"><img src="homepageimages/ferris.png" class="map-img" alt="ferris wheel"></a>
+
+                    </figure>
+                </section>
+
             </div>
-        </section>
 
-    </div>
-
-    <div class="centerMap">
-
-        <div class="mapContainer">
-
-        <section class="map">
-
-            <h2>Where To ?</h2>
-
-            <!-- Navigation Bar -->
-                <nav>
-                    <ul class="navList">
-                        <li id="nav1" onmouseover="highlightPin('nav1')" onmouseout="unhighlightPin('nav1')"><a href="index.html" class="nav1">Home</a></li>
-                        <li id="nav2" onmouseover="highlightPin('nav2')" onmouseout="unhighlightPin('nav2')"><a href="pages/blog.html" class="nav2">Blog</a></li>
-                        <li id="nav3" onmouseover="highlightPin('nav3')" onmouseout="unhighlightPin('nav3')"><a href="pages/design.html" class="nav3">Design</a></li>
-                        <li id="nav4" onmouseover="highlightPin('nav4')" onmouseout="unhighlightPin('nav4')"><a href="pages/essays.html"class="nav4" >Essays</a></li>
-                        <li id="nav5" onmouseover="highlightPin('nav5')" onmouseout="unhighlightPin('nav5')"><a href="pages/portfolio.html" class="nav5">Portfolio</a></li>
-                        <li id="nav6" onmouseover="highlightPin('nav6')" onmouseout="unhighlightPin('nav6')"><a href="pages/profile.html" class="nav6">Profile</a></li>
-                        <li id="nav7" onmouseover="highlightPin('nav7')" onmouseout="unhighlightPin('nav7')"><a href="pages/learn.html"class="nav7">Learn</a></li>
-                    </ul>
-                </nav>
-        </section>
-
-        <section class="learnAside">
-            <h2>Learn How To Drive</h2>
-            <p>Join me as I learn the rules of the road. Lets FINALLY get this learner's licence</p>
-            <!-- This is where I will place a 'Start Learning' Button -->
-            <a href="pages/learn.html"><button> Click To Learn</button></a>
-        </section>
-
-        <section class="galleryAside">
-            <h2>Tour Through My Work</h2>
-
-            <p>Explore my collection of digital paintings, game assets, and artistic experiments that reflect my growth and passion for digital art.</p>        
-            <figure class="indexImages">
-                <a href="pages/portfolio.html"> <img src="homepageimages/bin.png" class="map-img" alt="bin"></a>
-                <a href="pages/portfolio.html"><img src="homepageimages/bottleKnock.png" class="map-img" alt="bottleKnock"> </a>
-                <a href="pages/portfolio.html"><img src="homepageimages/bridge.png" class="map-img" alt="bridge"></a>
-                <a href="pages/portfolio.html"><img src="homepageimages/carousel.png" class="map-img" alt="carousel"></a>
-                <a href="pages/portfolio.html"><img src="homepageimages/clown.png" class="map-img" alt="clown"></a>
-                <a href="pages/portfolio.html"><img src="homepageimages/ferris.png" class="map-img" alt="ferris wheel"></a>
-
-            </figure>
-
-            
-        </section>
-    </div>
-
-</div>
+        </div>
 
     </main>
 
@@ -120,10 +125,6 @@
          which explains what the website contains including why there is a learn how to drive page/My motivation. This must 
          redirect the user to the profile/about me page -->
 
-    <section class="startJourney">
-    <button onclick="startJourney()">Start the Journey</button>
-    <div id="car" class="car">🚗</div>
-    </section>
     
          <footer class="footer">
        <h3>Stay Connected</h3>
