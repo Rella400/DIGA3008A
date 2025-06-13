@@ -46,10 +46,27 @@
         <section class="essayHeading">
 
             <h1 class="essayH">Essay 3: Reflection on Portfolio Implementation</h1>
-            <time datetime="2025-02-17">April 21, 2025</time>
-            <p class="essayP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio aliquam vero non. 
-                Inventore corrupti saepe provident quibusdam quas ad quos totam excepturi architecto facilis, veritatis explicabo dolores doloribus numquam!</p>
-     
+            <time datetime="2025-02-17">June 13, 2025</time>
+            
+<p>When building my website, I made sure the design of the user interface (UI) and the user experience (UX) directly influenced how I wrote the code. This helped keep the website easy to manage and use. </p>
+<h2>Folder Structure</h2>
+<p>My folders match the way the website content is organized. All HTML pages are in a /pages folder, while CSS and JavaScript files are kept in their own /css and /js folders. Images have a separate folder too. This clear separation keeps things neat and makes it easier to work on different parts without confusion. I used clear, descriptive names like mainArticle, blogHeading, and myButton for elements in the code. This makes it simple to find and update things later, and to add new features without problems. </p>
+<h2>Semantic Markup</h2>
+<p>I used HTML elements that give clear meaning to the content, like &lt;main &gt;, &lt;article &gt;, &lt;section &gt;, &lt;header &gt;, &lt;footer &gt;, and &lt;time &gt;. This helps browsers understand the page better and makes the site more accessible to people using screen readers. For example, the navigation menu uses a &lt;nav &gt; with a list, so assistive devices can easily read it. Headings are organized properly with &lt;h1 &gt;, &lt;h2 &gt;, and &lt;h3 &gt;, which helps everyone follow the structure of the page. The &lt;time &gt; tag with a date attribute makes the date understandable by machines and assistive tech.
+Although the site is accessible, I know I can improve it more by adding ARIA labels to buttons and labels to form inputs. I linked to external fonts for consistent text style.
+Right now, the metadata is basic but enough. I could have improved it by adding more descriptive tags and social sharing info (Open Graph tags) to improve SEO and how the site looks when shared. </p>
+<h2>CSS</h2>
+<p>All styles are in an external CSS file (universal.css) instead of inline styles. This keeps the design consistent and makes it easier to update.
+I used flexible layouts like flexbox and grid, so the site adapts nicely on phones and desktops. Class names like .navList and .centerWelcome are clear and organized, which helps keep styling simple and scalable. Small effects like hover zoom make the site feel interactive without making the code messy. </p>
+<h2>JavaScript</h2>
+<p>JavaScript code is all in one external file (universal.js) to keep the HTML clean. I added useful features like dark mode toggle and a scroll-to-top button, which improve how people use the site, especially when reading long articles. I wrote reusable functions to avoid repeating code, which helps maintain the site more easily. I haven’t used asynchronous loading, but I know adding it for things like loading blog posts or forms would make the site faster and smoother in the future. </p>
+<h2>How UI/UX Shaped My Code</h2>
+<p>The simple, clean design helped me break the code into clear parts like header, main content, and footer. UX features like dark mode and scroll feedback guided my JavaScript and CSS choices to keep the interface easy and uncluttered. Choosing easy-to-read fonts like Roboto Condensed and Anton also helped keep the HTML lightweight and the overall experience smooth for both users and developers. </p>
+<p>The folder setup matches the content layout and separates different code types clearly. Semantic HTML makes the site accessible and SEO-friendly. CSS is modular, responsive, and neat, and JavaScript adds helpful interactivity without making things complicated.
+Though I can improve metadata and accessibility labels more, my current approach supports a user-friendly, maintainable, and easy-to-expand website that looks good and works well. </p>
+
+
+
         </section>
 
 
